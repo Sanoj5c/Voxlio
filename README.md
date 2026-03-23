@@ -20,7 +20,7 @@
 
 1. Clone the repo
    \`\`\`bash
-   git clone https://github.com/YOUR_USERNAME/voxlio.git
+   git clone https://github.com/sanoj5c/voxlio.git
    \`\`\`
 
 2. Install dependencies
