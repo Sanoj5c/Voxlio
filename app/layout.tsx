@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
-import { Geist, Geist_Mono, IBM_Plex_Serif, Mona_Sans } from 'next/font/google'
+import { IBM_Plex_Serif, Mona_Sans } from 'next/font/google'
+
 import './globals.css'
+import Navbar from '@/components/Navbar'
 
 const ibmplexserif = IBM_Plex_Serif({
   variable: "--font-ibmplexserif",
@@ -46,6 +48,7 @@ export default function RootLayout({
           </header>
           {children}
         </ClerkProvider>
+        <Navbar></Navbar>
       </body>
     </html>
   )
