@@ -32,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmplexserif.variable} ${monasans.variable} relative font-sans antialiased`}>
+        <Navbar />
         <ClerkProvider>
           <header className="flex justify-end items-center p-4 gap-4 h-16">
             <Show when="signed-out">
@@ -48,7 +49,7 @@ export default function RootLayout({
           </header>
           {children}
         </ClerkProvider>
-        <Navbar></Navbar>
+        
       </body>
     </html>
   )
